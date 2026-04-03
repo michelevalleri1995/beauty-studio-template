@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trattamenti Viso Premium Milano | Beauty — Studio Estetico di Lusso</title>
+  <title>Trattamenti Viso Premium Milano | Atelier Lusso — Studio Estetico di Lusso</title>
   <meta name="description" content="Studio estetico di lusso a Milano con tecnologie 2026. Trattamenti viso, body e nails certificati. Prenota consulenza gratis.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#F9F8F6">
-  <link rel="canonical" href="https://www.beauty-studio.it/">
+  <link rel="canonical" href="https://www.atelier-lusso-milano.it/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
-  <meta property="og:url" content="https://www.beauty-studio.it/">
-  <meta property="og:title" content="Trattamenti Viso Premium Milano | Beauty">
+  <meta property="og:url" content="https://www.atelier-lusso-milano.it/">
+  <meta property="og:title" content="Trattamenti Viso Premium Milano | Atelier Lusso">
   <meta property="og:description" content="Studio estetico di lusso a Milano. Trattamenti viso, body e nails certificati. Consulenza gratuita.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Beauty — Trattamenti viso premium Milano">
+  <meta name="twitter:title" content="Atelier Lusso — Trattamenti viso premium Milano">
   <meta name="twitter:description" content="Studio estetico di lusso a Milano. Prenota la consulenza.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
-  <!-- FORMSPREE_FORM_ID: id form da https://formspree.io (stesso endpoint per tutti i moduli; distingui con campo form_type). GA4_MEASUREMENT_ID: es. G-XXXXXXXXXX -->
+  <!-- Dominio esempio: www.atelier-lusso-milano.it — cerca/sostituisci con il tuo URL definitivo (anche in robots.txt e sitemap.xml). SITE_CONFIG: FORMSPREE_FORM_ID, GA4_MEASUREMENT_ID -->
   <script>
-  window.BEAUTY_CONFIG = {
+  window.SITE_CONFIG = {
     FORMSPREE_FORM_ID: '',
     GA4_MEASUREMENT_ID: ''
   };
-  window.BEAUTY_FORM_CSRF = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : ('csrf-' + Date.now());
+  window.SITE_FORM_CSRF = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : ('csrf-' + Date.now());
   (function initGa4() {
-    var id = window.BEAUTY_CONFIG && window.BEAUTY_CONFIG.GA4_MEASUREMENT_ID;
+    var id = window.SITE_CONFIG && window.SITE_CONFIG.GA4_MEASUREMENT_ID;
     if (!id) return;
     var g = document.createElement('script');
     g.async = true;
@@ -37,9 +37,9 @@
     window.gtag('js', new Date());
     window.gtag('config', id, { anonymize_ip: true, send_page_view: true });
   })();
-  function beautyTrack(eventName, params) {
+  function siteTrack(eventName, params) {
     if (typeof window.gtag !== 'function') return;
-    var id = window.BEAUTY_CONFIG && window.BEAUTY_CONFIG.GA4_MEASUREMENT_ID;
+    var id = window.SITE_CONFIG && window.SITE_CONFIG.GA4_MEASUREMENT_ID;
     if (!id) return;
     window.gtag('event', eventName, params || {});
   }
@@ -50,13 +50,13 @@
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.beauty-studio.it/#localbusiness",
-        "name": "Beauty — Studio Estetico Milano",
+        "@id": "https://www.atelier-lusso-milano.it/#localbusiness",
+        "name": "Atelier Lusso — Studio Estetico Milano",
         "description": "Clinica estetica di lusso a Milano: trattamenti viso premium, body ritual, nail care e consulenze personalizzate.",
         "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "url": "https://www.beauty-studio.it/",
+        "url": "https://www.atelier-lusso-milano.it/",
         "telephone": "+39-02-765-43210",
-        "email": "info@beauty-studio.it",
+        "email": "info@atelier-lusso-milano.it",
         "priceRange": "€€€",
         "address": {
           "@type": "PostalAddress",
@@ -99,7 +99,7 @@
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Trattamenti Beauty",
+          "name": "Trattamenti Atelier Lusso",
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trattamento viso premium", "description": "Protocollo viso clinic 90 min con peeling e maschera biomimetica." } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body ritual / drenaggio", "description": "Percorsi corpo e drenaggio linfatico in cabina." } },
@@ -109,7 +109,7 @@
       },
       {
         "@type": "ItemList",
-        "@id": "https://www.beauty-studio.it/#services-list",
+        "@id": "https://www.atelier-lusso-milano.it/#services-list",
         "name": "Servizi principali",
         "itemListElement": [
           {
@@ -118,9 +118,9 @@
             "item": {
               "@type": "Service",
               "name": "Trattamento viso premium",
-              "provider": { "@id": "https://www.beauty-studio.it/#localbusiness" },
+              "provider": { "@id": "https://www.atelier-lusso-milano.it/#localbusiness" },
               "areaServed": { "@type": "City", "name": "Milano" },
-              "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "150", "availability": "https://schema.org/InStock", "url": "https://www.beauty-studio.it/#servizi" }
+              "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "150", "availability": "https://schema.org/InStock", "url": "https://www.atelier-lusso-milano.it/#servizi" }
             }
           },
           {
@@ -129,7 +129,7 @@
             "item": {
               "@type": "Service",
               "name": "Consulenza estetica gratuita",
-              "provider": { "@id": "https://www.beauty-studio.it/#localbusiness" },
+              "provider": { "@id": "https://www.atelier-lusso-milano.it/#localbusiness" },
               "areaServed": { "@type": "City", "name": "Milano" }
             }
           }
@@ -137,33 +137,33 @@
       },
       {
         "@type": "Review",
-        "@id": "https://www.beauty-studio.it/#review-elena",
+        "@id": "https://www.atelier-lusso-milano.it/#review-elena",
         "author": { "@type": "Person", "name": "Elena V." },
-        "itemReviewed": { "@id": "https://www.beauty-studio.it/#localbusiness" },
+        "itemReviewed": { "@id": "https://www.atelier-lusso-milano.it/#localbusiness" },
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "reviewBody": "Texture più compatta e tono uniforme già dalla terza sessione. Ambiente silenzioso e professionale."
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.beauty-studio.it/#breadcrumb",
+        "@id": "https://www.atelier-lusso-milano.it/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.beauty-studio.it/"
+            "item": "https://www.atelier-lusso-milano.it/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Trattamenti viso premium Milano",
-            "item": "https://www.beauty-studio.it/#top"
+            "item": "https://www.atelier-lusso-milano.it/#top"
           }
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.beauty-studio.it/#faq",
+        "@id": "https://www.atelier-lusso-milano.it/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -287,7 +287,7 @@
   <div id="nav-flash" class="fixed inset-0 z-[100] bg-milky opacity-0" aria-hidden="true"></div>
   <header class="sticky top-0 z-50 border-b border-charcoal/10 bg-milky/80 backdrop-blur-md">
     <nav class="mx-auto flex min-h-[72px] max-w-6xl items-center justify-between gap-3 px-6 py-3">
-      <a href="#top" class="touch-target-inline flex shrink-0 items-center font-serif text-xl tracking-[0.22em] uppercase text-charcoal">Beauty</a>
+      <a href="#top" class="touch-target-inline flex shrink-0 items-center font-serif text-xl tracking-[0.22em] uppercase text-charcoal">Atelier Lusso</a>
       <a href="#contatti" id="header-rating" data-analytics-cta="cta_header_rating" class="hidden min-[500px]:flex min-[1100px]:mr-4 flex-col items-start gap-0.5 border-0 border-r-0 text-left transition hover:opacity-80 sm:flex-row sm:items-center sm:gap-2 md:border-r md:border-charcoal/10 md:pr-6" aria-label="Valutazione 4,9 su 5 — vai al modulo prenotazione">
         <span class="text-sm text-satin" aria-hidden="true">★★★★★</span>
         <span class="text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-charcoal"><span class="text-satin">4,9</span>/5 <span class="font-normal text-charcoal/50">· 180 rec.</span></span>
@@ -342,7 +342,7 @@
         </div>
       </nav>
       <div class="border-t border-charcoal/10 p-5 safe-area-pb">
-        <a href="https://wa.me/390276543210?text=Ciao%20Beauty%2C%20vorrei%20informazioni%20per%20prenotare%20una%20consulenza." target="_blank" rel="noopener noreferrer" @click="mobileOpen=false" class="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-95">
+        <a href="https://wa.me/390276543210?text=Ciao%20Atelier%20Lusso%2C%20vorrei%20informazioni%20per%20prenotare%20una%20consulenza." target="_blank" rel="noopener noreferrer" @click="mobileOpen=false" class="flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-95">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
           WhatsApp · Risposta rapida
         </a>
@@ -355,12 +355,12 @@
       <div class="mx-auto max-w-6xl px-6 py-3 text-[0.7rem] text-charcoal/55">
         <ol class="flex flex-wrap items-center gap-2" itemscope itemtype="https://schema.org/BreadcrumbList">
           <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="flex items-center gap-2">
-            <a itemprop="item" href="https://www.beauty-studio.it/" class="transition hover:text-satin"><span itemprop="name">Home</span></a>
+            <a itemprop="item" href="#top" class="transition hover:text-satin"><span itemprop="name">Home</span></a>
             <meta itemprop="position" content="1">
             <span aria-hidden="true" class="text-charcoal/35">/</span>
           </li>
           <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="text-charcoal/80">
-            <a itemprop="item" href="https://www.beauty-studio.it/#top"><span itemprop="name">Trattamenti viso premium Milano</span></a>
+            <a itemprop="item" href="#servizi"><span itemprop="name">Trattamenti viso premium Milano</span></a>
             <meta itemprop="position" content="2">
           </li>
         </ol>
@@ -408,7 +408,7 @@
             <span class="rounded-full border border-milky/50 bg-milky/15 px-3 py-1 text-[0.62rem] font-medium uppercase tracking-[0.24em] text-milky backdrop-blur-sm">Top-rated 4.9★ · 180+ recensioni</span>
             <span class="rounded-full border border-satin/80 bg-satin/90 px-3 py-1 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-charcoal shadow-sm">−30% sui pacchetti 5 sedute</span>
           </div>
-          <p class="hero-entrance text-[0.72rem] font-medium uppercase tracking-[0.28em] text-milky/85">Beauty · Via Montenapoleone, Milano</p>
+          <p class="hero-entrance text-[0.72rem] font-medium uppercase tracking-[0.28em] text-milky/85">Atelier Lusso · Via Montenapoleone, Milano</p>
           <h1 id="hero-headline" class="mt-5 font-serif text-[1.65rem] leading-[1.15] text-milky sm:text-4xl md:text-5xl lg:text-[3.15rem] lg:leading-[1.08]">
             <span class="hero-line block overflow-hidden pb-0.5"><span class="hero-line-inner block translate-y-full will-change-transform">Trattamenti Viso Premium a Milano</span></span>
             <span class="hero-line block overflow-hidden pb-0.5"><span class="hero-line-inner block translate-y-full text-satin will-change-transform"><span class="text-milky">| </span>Risultati Clinici Garantiti</span></span>
@@ -960,7 +960,7 @@
             <picture class="block h-64 w-full md:h-80">
               <source type="image/avif" srcset="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75&fm=avif 400w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=78&fm=avif 800w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80&fm=avif 1200w" sizes="(min-width: 768px) 33vw, 100vw">
               <source type="image/webp" srcset="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&fm=webp 400w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&fm=webp 800w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85&fm=webp 1200w" sizes="(min-width: 768px) 33vw, 100vw">
-              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" srcset="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85 1200w" sizes="(min-width: 768px) 33vw, 100vw" data-full="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=85&fm=avif" alt="Beauty details" class="img-reveal h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.03]" width="800" height="1000" loading="lazy" decoding="async">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" srcset="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80 400w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80 800w, https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=85 1200w" sizes="(min-width: 768px) 33vw, 100vw" data-full="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=85&fm=avif" alt="Dettaglio trattamento estetico" class="img-reveal h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.03]" width="800" height="1000" loading="lazy" decoding="async">
             </picture>
           </button>
         </div>
@@ -1027,7 +1027,7 @@
             <div class="mt-10 space-y-3 text-sm leading-relaxed text-charcoal/80">
               <p><span class="text-xs uppercase tracking-[0.2em] text-charcoal/45">Sede</span><br>Via Montenapoleone 8, 20121 Milano</p>
               <p><span class="text-xs uppercase tracking-[0.2em] text-charcoal/45">Telefono</span><br><a href="tel:+390276543210" class="border-b border-transparent hover:border-satin">+39 02 765 43210</a></p>
-              <p><span class="text-xs uppercase tracking-[0.2em] text-charcoal/45">Email</span><br><a href="mailto:info@beauty-studio.it" class="border-b border-transparent hover:border-satin">info@beauty-studio.it</a></p>
+              <p><span class="text-xs uppercase tracking-[0.2em] text-charcoal/45">Email</span><br><a href="mailto:info@atelier-lusso-milano.it" class="border-b border-transparent hover:border-satin">info@atelier-lusso-milano.it</a></p>
             </div>
           </div>
           <!-- Mobile: one-tap + Calendly -->
@@ -1155,7 +1155,7 @@
     <div class="mx-auto max-w-6xl px-6 py-14">
       <div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <p class="font-serif text-lg tracking-[0.18em] uppercase text-milky">Beauty</p>
+          <p class="font-serif text-lg tracking-[0.18em] uppercase text-milky">Atelier Lusso</p>
           <p class="mt-3 max-w-xs text-sm leading-relaxed text-milky/60">Clinica estetica · Milano. Trattamenti su appuntamento.</p>
           <a href="#contatti" data-analytics-cta="cta_footer_prenota" class="mt-8 inline-flex items-center justify-center rounded-none border border-milky/40 bg-milky px-8 py-3 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-charcoal transition hover:bg-satin">Prenotazione rapida</a>
         </div>
@@ -1191,7 +1191,7 @@
           <p id="footer-newsletter-toast" class="mt-2 hidden text-xs font-medium text-satin" role="status"></p>
         </div>
       </div>
-      <p class="mt-12 border-t border-milky/15 pt-8 text-center text-xs text-milky/45">© <span id="year"></span> Beauty · Tutti i diritti riservati.</p>
+      <p class="mt-12 border-t border-milky/15 pt-8 text-center text-xs text-milky/45">© <span id="year"></span> Atelier Lusso · Tutti i diritti riservati.</p>
     </div>
   </footer>
 
@@ -1378,11 +1378,11 @@
 
     document.body.addEventListener('click', function (e) {
       var el = e.target && e.target.closest && e.target.closest('[data-analytics-cta]');
-      if (!el || typeof beautyTrack !== 'function') return;
+      if (!el || typeof siteTrack !== 'function') return;
       var href = el.getAttribute('href') || '';
       var host = '';
       try { if (href.indexOf('http') === 0) host = new URL(href).hostname; } catch (err) { host = ''; }
-      beautyTrack('cta_click', {
+      siteTrack('cta_click', {
         cta_id: el.getAttribute('data-analytics-cta') || '',
         link_url: href.slice(0, 500),
         outbound: !!host && host !== window.location.hostname
@@ -1390,7 +1390,7 @@
     }, true);
 
     function getFormspreeId() {
-      var c = window.BEAUTY_CONFIG || {};
+      var c = window.SITE_CONFIG || {};
       return String(c.FORMSPREE_FORM_ID || '').trim();
     }
     function isHoneypotTripped(form) {
@@ -1401,7 +1401,7 @@
     function postFormspree(payload, onOk, onErr) {
       var id = getFormspreeId();
       var body = Object.assign({
-        _subject: '[Beauty] ' + String(payload.form_type || 'lead')
+        _subject: '[Atelier Lusso] ' + String(payload.form_type || 'lead')
       }, payload);
       if (!id) {
         window.setTimeout(function () { onOk(); }, 450);
@@ -1537,7 +1537,7 @@
     runCalc();
 
     /* Popup testimonial a metà scroll */
-    var popKey = 'beauty_scroll_pop_dismissed';
+    var popKey = 'atelier_lusso_scroll_pop_dismissed';
     var pop = document.getElementById('scroll-testimonial-popup');
     var popClose = document.getElementById('scroll-pop-close');
     if (pop && !sessionStorage.getItem(popKey)) {
@@ -1624,14 +1624,14 @@
     var spotsEl = document.getElementById('spots-remaining');
     var spotsVal = 8;
     if (spotsEl) {
-      var stored = sessionStorage.getItem('beauty_spots');
+      var stored = sessionStorage.getItem('atelier_lusso_spots');
       if (stored !== null) spotsVal = Math.max(3, parseInt(stored, 10) || 8);
       spotsEl.textContent = String(spotsVal);
       setInterval(function () {
         if (spotsVal > 3) {
           spotsVal--;
           spotsEl.textContent = String(spotsVal);
-          sessionStorage.setItem('beauty_spots', String(spotsVal));
+          sessionStorage.setItem('atelier_lusso_spots', String(spotsVal));
         }
       }, 90000);
     }
@@ -1732,11 +1732,11 @@
           servizi_interesse: servizi.join(', ') || '(nessuno)',
           finestra_preferita: finestra || '(nessuna)',
           page_url: window.location.href,
-          _csrf: window.BEAUTY_FORM_CSRF || ''
+          _csrf: window.SITE_FORM_CSRF || ''
         }, function () {
           setBtnLoading(deskSubmitBtn, false);
-          if (typeof beautyTrack === 'function') {
-            beautyTrack('form_submit', { form_id: 'contact_desktop', transport: getFormspreeId() ? 'formspree' : 'demo' });
+          if (typeof siteTrack === 'function') {
+            siteTrack('form_submit', { form_id: 'contact_desktop', transport: getFormspreeId() ? 'formspree' : 'demo' });
           }
           if (fieldsDesk) fieldsDesk.classList.add('hidden');
           if (successDesk) {
@@ -1793,11 +1793,11 @@
           servizio: selMob.value,
           nota: mobNote ? mobNote.value.trim() : '',
           page_url: window.location.href,
-          _csrf: window.BEAUTY_FORM_CSRF || ''
+          _csrf: window.SITE_FORM_CSRF || ''
         }, function () {
           setBtnLoading(mobSubmitBtn, false);
-          if (typeof beautyTrack === 'function') {
-            beautyTrack('form_submit', { form_id: 'contact_mobile', transport: getFormspreeId() ? 'formspree' : 'demo' });
+          if (typeof siteTrack === 'function') {
+            siteTrack('form_submit', { form_id: 'contact_mobile', transport: getFormspreeId() ? 'formspree' : 'demo' });
           }
           var okMob = document.getElementById('contact-success-mobile');
           if (okMob) {
@@ -1829,12 +1829,12 @@
           form_type: 'lead_magnet',
           email: em,
           page_url: window.location.href,
-          _csrf: window.BEAUTY_FORM_CSRF || ''
+          _csrf: window.SITE_FORM_CSRF || ''
         }, function () {
           setBtnLoading(leadBtn, false);
           leadForm.reset();
-          if (typeof beautyTrack === 'function') {
-            beautyTrack('form_submit', { form_id: 'lead_magnet', transport: getFormspreeId() ? 'formspree' : 'demo' });
+          if (typeof siteTrack === 'function') {
+            siteTrack('form_submit', { form_id: 'lead_magnet', transport: getFormspreeId() ? 'formspree' : 'demo' });
           }
           if (leadToast) {
             leadToast.textContent = getFormspreeId()
@@ -1868,12 +1868,12 @@
           form_type: 'newsletter',
           email: nem,
           page_url: window.location.href,
-          _csrf: window.BEAUTY_FORM_CSRF || ''
+          _csrf: window.SITE_FORM_CSRF || ''
         }, function () {
           setBtnLoading(newsBtn, false);
           newsForm.reset();
-          if (typeof beautyTrack === 'function') {
-            beautyTrack('form_submit', { form_id: 'newsletter', transport: getFormspreeId() ? 'formspree' : 'demo' });
+          if (typeof siteTrack === 'function') {
+            siteTrack('form_submit', { form_id: 'newsletter', transport: getFormspreeId() ? 'formspree' : 'demo' });
           }
           if (newsToast) {
             newsToast.textContent = getFormspreeId()
