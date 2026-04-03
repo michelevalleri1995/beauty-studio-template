@@ -1,0 +1,6 @@
+# Beauty — regole crawler (aggiorna il dominio se diverso da beauty-studio.it)
+User-agent: *
+Allow: /
+
+Host: https://www.beauty-studio.it
+Sitemap: https://www.beauty-studio.it/sitemap.xml
